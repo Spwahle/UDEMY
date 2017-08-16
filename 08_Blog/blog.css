@@ -1,0 +1,34 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3.Date {
+  color:#3498db;
+  padding-left: 25px;
+  font-weight: 400;
+
+}
+
+.Main {
+  border: 25px solid #bdc3c7;
+  max-width: 700px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #2c3e50;
+  padding-left: 25px;
+  font-weight: bold;
+}
+
+p {
+  content: 100%;
+  padding-left: 25px;
+}
+
+.quote {
+  border-left: 3px solid #bdc3c7;
+  padding-left: 5px;
+}
