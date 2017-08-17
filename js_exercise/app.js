@@ -38,22 +38,29 @@
 //   else {
 //     document.write('Your age is even')
 //   }}
-// console.log("1 is " + isOdd(userAge));
-
-var secretNum = 13;
-
-var guess = prompt('Guess a number?');
-document.write(guess);
-
-if (guess == secretNum) {
-  document.write('You are right!');
-}
-else if (guess > secretNum){
-  document.write('Too high');
-}
-else if (guess < secretNum){
-  document.write('Too low');
-}
-else {
-  document.write('Not a number')
-}
+// // console.log("1 is " + isOdd(userAge));
+//
+// var secretNum = 13;
+//
+// var guess = prompt('Guess a number?');
+// if (guess == secretNum) {
+//   document.write('You are right!');
+// }
+// else if (guess > secretNum){
+//   document.write('Too high');
+// }
+// else if (guess < secretNum){
+//   document.write('Too low');
+// }
+// else {
+//   document.write('Not a number')
+// }
+//
+// let count = 5;
+//
+// while (count <= 50){
+//   if( count % 5 === 0 && count % 3 === 0){
+//     console.log(count);
+// }
+//   count++;
+// }
