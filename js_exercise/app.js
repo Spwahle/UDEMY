@@ -64,3 +64,6 @@
 // }
 //   count++;
 // }
+
+for(let i = -10, i < 19, i++)
+  console.log(i)
