@@ -2,8 +2,11 @@ var express = require('express');
 
 var app = express();
 
+app.use(express.static('public'))
+app.set('view engine')
+
 app.get('/', function(req, res){
-  res.render('home.ejs');
+  res.render('home.ejs', 'ejs');
   // res.send('<h1>welcome to the homepage</h1><h2>blah blah blah</h2>')
 });
 
