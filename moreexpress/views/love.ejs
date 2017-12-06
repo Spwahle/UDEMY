@@ -1,12 +1,15 @@
-<link rel="stylesheet" href="app.css"
+<% include partials/header %>
 
+    <h1>You fell in love with:
+        <%= thingVar.toUpperCase() %>
+    </h1>
 
-<h1>You fell in love with: <%= thingVar.toUpperCase() %></h1>
+    <%=if(thingVar.toLowerCase === "hagen"){ %>
+        <p>Good Choice </p>
+        <%= } else { %>
+            <p> Bad Choice</p>
+            <% } %>
 
-<%=if(thingVar.toLowerCase === "hagen"){ %>
-  <p>Good Choice </p>
-<%= } else { %>
-  <p> Bad Choice</p>
-<% } %>
+                <p>P.S this is the fell in love bullshit</p>
 
-<p>P.S this is the fell in love bullshit</p>
+                <% include partials/footer %>
