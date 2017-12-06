@@ -7,7 +7,7 @@ app.get("/", function(req, res) {
     res.render("home");
 });
 
-app.get("/friends", function(res, req) {
+app.get("/friends", function(req, res) {
     var friends = ["tony", "justin", "jeanette", "kelly", "holly"];
     res.render("friends", { friends: friends });
 });
