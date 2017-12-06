@@ -4,9 +4,14 @@ var app = express();
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-            res.render("home");
-        }
+    res.render("home");
+});
 
-        app.listen(process.env.PORT, process.env.IP, function() {
-            console.log("server started")
-        })
+app.get("/friends", function(res, req) {
+    var friends = ["tony", "justin", "jeanette", "kelly", "holly"];
+    res.render("friends", { friends: friends });
+});
+
+app.listen(3000, function() {
+    console.log("server started");
+});
