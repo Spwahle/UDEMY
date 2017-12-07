@@ -8,8 +8,9 @@ app.get('/', function(req, res) {
 });
 
 app.get('/results', function(req, res) {
-    request('http://omdbapi.com/?s=ohio&apikey=thewdb', function(error, response, body) {
-        console.log(req.query.search)
+    var query = (req.query.search);
+    var url = 'http://omdbapi.com/?s=' + query + '&apikey=thewdb';
+    request(url, function(error, response, body) {
         if (!error && response.statusCode == 200) {
             var data = JSON.parse(body);
             res.render('results', { data: data });
